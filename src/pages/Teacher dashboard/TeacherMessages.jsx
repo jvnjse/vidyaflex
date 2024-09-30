@@ -47,7 +47,7 @@ function TeacherMessages() {
     const fetchMessages = async () => {
         if (selectedCourse) {
             try {
-                const response = await axios.get(`${config.base_url}/coursemessages/${selectedCourse.id}`);
+                const response = await axios.get(`${config.base_url}/coursemessages/${selectedCourse.id}/`);
                 setMessages(response.data);
             } catch (error) {
                 console.error('Error fetching messages:', error);

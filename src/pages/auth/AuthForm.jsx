@@ -45,7 +45,7 @@ const AuthForm = () => {
             localStorage.setItem('id', response.data.user_id);
             localStorage.setItem('role', response.data.role);
             localStorage.setItem('teacherid', response.data.teacherstudentid);
-            (isLogin ? (response.data.role ===true ?   navigate('/courses'): navigate(`/tutor/courses/${response.data.user_id}`)) : navigate(`/select-role/${response.data.user_id}`));
+            (isLogin ? (response.data.role ===true ?   navigate('/courses'): navigate(`/tutor/courses/${response.data.user_id}/`)) : navigate(`/select-role/${response.data.user_id}`));
         } catch (error) {
             console.error("Error:", error);
         }

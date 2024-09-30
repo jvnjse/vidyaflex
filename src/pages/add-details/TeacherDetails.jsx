@@ -48,9 +48,9 @@ const TeacherDetails = () => {
                     "Content-Type": "multipart/form-data",
                 },
             });
-            navigate(`/tutor/courses/${userid}`);
             localStorage.setItem('role', false)
             localStorage.setItem('teacherid', response.data.id)
+            window.location.href =`/tutor/courses/${userid}`
 
 
         } catch (error) {

@@ -15,7 +15,7 @@ const CreateAssignment = () => {
 
 
     useEffect(() => {
-        axios.get(`${config.base_url}/courses/?tuserid=${teacherid}`)
+        axios.get(`${config.base_url}/courses/?tuserid=${teacherid}/`)
             .then(response => {
                 setCourses(response.data);
             })

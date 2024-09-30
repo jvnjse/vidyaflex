@@ -49,9 +49,10 @@ const StudentDetails = () => {
                     "Content-Type": "multipart/form-data",
                 },
             });
-            navigate(`/courses`);
             localStorage.setItem('role', true)
             localStorage.setItem('teacherid', response.data.id)
+            // navigate(``);
+            window.location.href =`/courses`
 
         } catch (error) {
             console.error("Error:", error);
