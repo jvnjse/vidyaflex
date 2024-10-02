@@ -1,5 +1,5 @@
 const config = {
-  base_url: "https://b4k6kcbb-8001.inc1.devtunnels.ms/api",
-  image_url: "https://b4k6kcbb-8001.inc1.devtunnels.ms",
+  base_url: "https://vidyaflex.xyz/api",
+  image_url: "https://vidyaflex.xyz",
 };
 export default config;
