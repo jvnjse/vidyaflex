@@ -85,7 +85,7 @@ function MyCourses() {
                                 <h3 className="text-lg font-medium text-gray-800 truncate">
                                     {course.course_name}
                                 </h3>
-                                <p className="text-sm text-gray-500">{course.course_description}</p>
+                                <p className="text-sm text-gray-500 truncate">{course.course_description}</p>
                                 <div className="flex justify-between items-center mt-2">
                                     <span className="text-xl font-bold text-gray-800">
                                         {course.course_price ? `$${course.course_price}` : "Free"}
@@ -121,7 +121,7 @@ export default MyCourses;
 function CourseDetailsPopup({ onClose, course }) {
     return (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
-            <div className="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-2xl overflow-y-auto h-auto relative">
+            <div className="bg-white p-6 rounded-lg shadow-lg w-3/4 max-w-2xl h-[100vh] overflow-scroll relative">
                 <button
                     onClick={() => { onClose(false) }}
                     className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-300 transition-colors duration-200"
